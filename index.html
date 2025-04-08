@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empyrean Services</title>
+    <style>
+        /* GLOBAL STYLES */
+        :root {
+            --primary: #0E5A8A; /* Brand navy */
+            --secondary: #F5C842; /* Brand gold */
+            --light: #F8F5F0; /* Off-white */
+            --dark: #1F1F1F;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            line-height: 1.6;
+            color: var(--dark);
+        }
+        
+        /* HEADER STYLES */
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .logo {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 1.8rem;
+            color: white;
+            text-decoration: none;
+        }
+        
+        /* MAIN CONTENT STYLES */
+        .hero {
+            background-color: var(--light);
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        
+        /* FOOTER STYLES */
+        footer {
+            background-color: var(--primary);
+            color: white;
+            padding: 2rem 1rem;
+            margin-top: 2rem;
+        }
+        
+        /* RESPONSIVE STYLES */
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="header-container">
+            <a href="/" class="logo">Empyrean Services</a>
+            <nav>
+                <a href="#services">Services</a>
+                <a href="#booking">Book Now</a>
+                <a href="#about">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <section class="hero">
+            <h1>Elevating Your Space With Care</h1>
+            <p>Compassionate cleaning services for all homes</p>
+            <a href="#booking" class="cta-button">Book a Service</a>
+        </section>
+        
+        <!-- Services sections will go here -->
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2023 Empyrean Services. All rights reserved.</p>
+            <p>NDIS and TAC friendly services</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple JavaScript for mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile menu functionality would go here
+            console.log('Site loaded successfully');
+        });
+    </script>
+</body>
+</html>
